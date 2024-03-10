@@ -8,10 +8,13 @@
 </head>
 <body>
     <div class="left-side">
-        <img class="left-image" src="images/halie-west-25xggax4bSA-unsplash.jpg">
+        <!-- <img class="left-image" src="images/halie-west-25xggax4bSA-unsplash.jpg"> -->
         <div class="banner">
             <img class="banner-image" src="images/odin-lined.png">
-            ODIN
+            <div class="banner-text">ODIN</div>
+        </div>
+        <div class="photo-cred">
+            Photo by <a class="photo-cred-link" href="https://unsplash.com/photos/green-leaf-plant-in-close-up-photography-25xggax4bSA">Halie West</a> on <a class="photo-cred-link" href="https://unsplash.com/">Unsplash</a> 
         </div>
     </div>
     <form action="" method="post">
@@ -29,34 +32,36 @@
             <h2>Let's do this!</h2>
             <div class="first-line">
                 <label for="first-name">First Name
-                    <input id="first-name" name="first-name" type="text" required>
+                    <input id="first-name" name="first-name" type="text" required placeholder="John">
                 </label>
 
                 <label for="last-name">Last Name
-                    <input id="last-name" name="last-name" type="text" required>
+                    <input id="last-name" name="last-name" type="text" required placeholder="Doe">
                 </label>
             </div>
             <div class="middle-line">
                 <label for="email">Email
-                    <input id="email" name="email" type="email" required>
+                    <input id="email" name="email" type="email" required placeholder="john@example.com">
                 </label>
                 <label for="phone">Phone Number
-                    <input id="phone" name="phone" type="tel" required pattern="[0-9]{10}|[0-9]{3}[\s\.\-][0-9]{3}[\s\-\.][0-9]{4}">
+                    <input id="phone" name="phone" type="tel" required placeholder="123-456-7890" pattern="[0-9]{10}|[0-9]{3}[\s\.\-][0-9]{3}[\s\-\.][0-9]{4}">
                 </label>
             </div>
             <div class="bottom-line">
                 <label for="password">Password
-                    <input id="password" name="password" type="text" required>
+                    <input id="password" name="password" type="password" required minlength="8"
+                    pattern="(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[\#\?\!\@\$\%\^\&\*\-\(\)\\]).{8,}"
+                    title="Password must be 8 or more characters, and contain at least 1 lowercase letter [a-z], 1 uppercase letter [A-Z], 1 number [0-9], and 1 special character [!@#$%^&*()-\]">
                 </label>
     
                 <label for="confirm-password">Confirm Password
-                    <input id="confirm-password" name="confirm-password" type="text" required>    
+                    <input id="confirm-password" name="confirm-password" type="password" required>    
                 </label>
             </div>
         </div>
         <div class="lower-form">
             <button type="submit">Create Account</button>
-            <div class="already-have-account">Already have an account? Log in</div>
+            <div class="already-have-account">Already have an account? <a class="log-in" href="">Log in</a></div>
         </div>
     </form>
     
