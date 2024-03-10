@@ -1,0 +1,87 @@
+:root {
+    --font-family-pkg: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+* {
+    margin:0;
+    padding:0;
+}
+
+body {
+    display: flex;
+
+}
+
+.left-image {
+    position: absolute;
+    left: 0;
+    height: 100vh;
+    max-width: 50%;
+    margin: auto;
+}
+
+.banner {
+    background-color: blue;
+    height:100px;
+}
+
+form {
+    position:absolute;
+    right: 0;
+    height: 100vh;
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.middle-form {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.upper-form,
+.lower-form {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    padding: 20px;
+    background-color: rgb(247, 247, 247);
+}
+
+.upper-form {
+    justify-content: flex-end;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+input {
+    width: 200px;
+    height: 20px;
+    margin-right: 40px;
+}
+
+.first-line,
+.middle-line,
+.bottom-line {
+    display: flex;
+    margin: 10px 0px;
+}
+
+
+
+label {
+    display: flex;
+    flex-direction: column;
+    font-size: 10px;
+    font-family: var(--font-family-pkg)
+}
+
+h2 {
+    font-family: var(--font-family-pkg);
+}
+
+.you-know-you {
+    margin: 20px 0;
+}
